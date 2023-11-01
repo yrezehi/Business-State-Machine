@@ -1,6 +1,6 @@
-﻿using Business_State_Machine.Seriveces.States.Enums;
+﻿using Business_State_Machine.Services.States.Enums;
 
-namespace Business_State_Machine.Seriveces.States.Abstractions.Interfaces
+namespace Business_State_Machine.Services.States.Abstractions.Interfaces
 {
     public class IEntityState
     {

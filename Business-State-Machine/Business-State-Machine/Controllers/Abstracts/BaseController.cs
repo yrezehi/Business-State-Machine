@@ -1,6 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Business_State_Machine.Services.Abstract;
+using Microsoft.AspNetCore.Mvc;
 
-namespace UI.Controllers.Abstracts
+namespace Business_State_Machine.Controllers.Abstracts
 {
     public class BaseController<IService, T> : Controller where IService : ServiceBase<T> where T : class
     {

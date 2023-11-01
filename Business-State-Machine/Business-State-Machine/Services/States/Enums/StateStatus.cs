@@ -1,4 +1,4 @@
-﻿namespace Business_State_Machine.Seriveces.States.Enums
+﻿namespace Business_State_Machine.Services.States.Enums
 {
     public enum StateStatus
     {
