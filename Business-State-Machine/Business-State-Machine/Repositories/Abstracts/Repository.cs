@@ -1,7 +1,7 @@
-﻿using Core.Repositories.Abstracts.Interfaces;
+﻿using Business_State_Machine.Repositories.Abstracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.Repositories.Abstracts
+namespace Business_State_Machine.Repositories.Abstracts
 {
     public class Repository<T> : IRepository<T> where T : class
     {

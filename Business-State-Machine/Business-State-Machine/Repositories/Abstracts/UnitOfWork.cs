@@ -1,7 +1,7 @@
-﻿using Core.Repositories.Abstracts.Interfaces;
+﻿using Business_State_Machine.Repositories.Abstracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.Repositories.Abstracts
+namespace Business_State_Machine.Repositories.Abstracts
 {
     public class UnitOfWork<TContext> : IUnitOfWork<TContext>, IUnitOfWork where TContext : DbContext, IDisposable
     {

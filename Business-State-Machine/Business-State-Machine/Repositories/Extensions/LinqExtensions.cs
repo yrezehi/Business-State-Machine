@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Core.Repositories.Extensions
+namespace Business_State_Machine.Repositories.Extensions
 {
     public static class LinqExtensions
     {

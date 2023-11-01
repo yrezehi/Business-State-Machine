@@ -1,14 +1,13 @@
-﻿using Core.Models;
-using Core.Models.Serilog;
+﻿using Business_State_Machine.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Core.Repositories
+namespace Business_State_Machine.Repositories
 {
     public class RepositoryContext : DbContext
     {
         public RepositoryContext(DbContextOptions options) : base(options) { }
 
-        public virtual DbSet<EventLog> EventLogs { get; set; }
-        public virtual DbSet<Application> Applications { get; set; }
+        public virtual DbSet<StateTransaction> StateTransactions { get; set; }
+
     }
 }

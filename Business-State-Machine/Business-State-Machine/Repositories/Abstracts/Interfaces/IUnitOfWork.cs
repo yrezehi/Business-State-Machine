@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Core.Repositories.Abstracts.Interfaces
+namespace Business_State_Machine.Repositories.Abstracts.Interfaces
 {
     public interface IUnitOfWork : IDisposable
     {
