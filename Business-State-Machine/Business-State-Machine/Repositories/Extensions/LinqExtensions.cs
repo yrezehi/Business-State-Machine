@@ -1,5 +1,4 @@
-﻿using Core.Utils;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace Business_State_Machine.Repositories.Extensions
@@ -15,22 +14,5 @@ namespace Business_State_Machine.Repositories.Extensions
         public static IQueryable<IEntity> PaginateQuerable<IEntity>(this IQueryable<IEntity> source, int page, int size) where IEntity : class =>
             source.Skip(page).Take(size);
 
-        // includes first level of properties
-        public static IQueryable<IEntity> IncludeSurface<IEntity>(this IQueryable<IEntity> source, bool includeSurface = false) where IEntity : class
-        {
-            if (includeSurface)
-            {
-                foreach (var property in ReflectionUtil.GetObjectProperties(typeof(IEntity)))
-                {
-                    var publicAccessor = property.GetGetMethod();
-
-                    if (publicAccessor != null && publicAccessor.IsVirtual)
-                    {
-                        source = source.Include(property.Name);
-                    }
-                }
-            }
-            return source;
-        }
     }
 }

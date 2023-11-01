@@ -17,9 +17,5 @@ namespace Business_State_Machine.Controllers.Abstracts
         [HttpGet("api")]
         public virtual async Task<IActionResult> GetAll(int? page) =>
             Ok(await Service.GetAll(page));
-
-        [HttpGet("api/[action]")]
-        public virtual async Task<IActionResult> Search(string property, string value, int? page) =>
-            Ok(await Service.SearchByProperty<string>(property, value, page));
     }
 }
