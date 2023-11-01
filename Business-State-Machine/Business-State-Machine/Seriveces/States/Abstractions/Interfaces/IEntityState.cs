@@ -1,4 +1,4 @@
-﻿namespace Business_State_Machine.Seriveces.States.Abstractions
+﻿namespace Business_State_Machine.Seriveces.States.Abstractions.Interfaces
 {
     public class IEntityState
     {
