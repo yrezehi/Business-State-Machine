@@ -4,7 +4,7 @@ namespace Business_State_Machine.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class StateMachineController : ControllerBase
+    public class StateTransactionsController : ControllerBase
     {
        
     }
